@@ -15,18 +15,18 @@ export default class App extends React.Component {
       return(
         <div className= "App">
 
-        <h3>Criar Carro</h3>
+        <h3>Deletar Carro</h3>
 
         <label>Placa do Carro: </label>
          <input type = "text" value = {this.state.car} onChange = {(e) => {this.setState({car: e.target.value})}} />
 
          <br/>
 
-          <button onClick={this.add}>Adicionar</button>
+          <button onClick={this.add}>Deletar</button>
 
         <br/>
 
-          <label>Carro adicionado: {this.state.returnOwnerCar} </label>
+          <label>Carro deletado: {this.state.returnOwnerCar} </label>
          </div>
          );
       }
